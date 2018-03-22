@@ -1,16 +1,14 @@
 ## 使用
 
 ### 在线预览
-```javascript
-    <a href="https://huaml.github.io/Bootstrap/车联网/index.html">https://huaml.github.io/Bootstrap/车联网/index.html</a>
-```
+    https://huaml.github.io/Bootstrap/车联网/index.html
 
 ## 技术
 ```javascript
-    HTML, jQuery, Bootstrap
+   HTML, CSS, jQuery, Bootstrap
 ```
 
 ## 兼容性
 ```javascript
-    不支持低版本ie
+   不支持低版本ie
 ```
