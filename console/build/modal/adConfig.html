@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AD域管理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css?rev=@@hash">
+  </head>
+  <body>
+    <div class="modal fade" id="selectVolume" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">&times;</button>
+            <h4 class="modal-title">请选择卷</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th width="32"></th>
+                  <th width="120">卷名称</th>
+                  <th>存储目录</th>
+                  <th width="90">总空间</th>
+                  <th width="160">标签</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input name="volume" type="radio">
+                  </td>
+                  <td>linkapp</td>
+                  <td>linkapp</td>
+                  <td>10,240GB</td>
+                  <td>linkapp</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input name="volume" type="radio">
+                  </td>
+                  <td>linkapp</td>
+                  <td>linkapp</td>
+                  <td>10,240GB</td>
+                  <td>linkapp</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button">确定</button>
+            <button class="btn btn-default" data-dismiss="modal" type="button">取消</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+    <script src="js/jquery.min.js?rev=@@hash"></script>
+    <script src="js/bootstrap.min.js?rev=@@hash"></script>
+  </body>
+</html>

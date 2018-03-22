@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加存储设备</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css?rev=@@hash">
+  </head>
+  <body>
+    <div class="topbar" role="header"> 
+      <div class="topbar-wrap">
+        <div class="topbar-left pull-left">
+          <a class="topbar-brand pull-left" href="#">
+            <img src="img/logo.png?rev=@@hash" width="28" alt="管理控制台">
+          </a>
+          <a class="topbar-menu pull-left" href="index.html">管理控制台</a>
+        </div>
+        <div class="topbar-right pull-right">
+          <a class="topbar-menu pull-left" href="#">返回前台</a>
+          <div class="drodown pull-left topbar-menu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+              用户名
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a role="menuitem" href="#">退出</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.topbar -->
+    <div class="view-frame view-frame-full">
+      <div class="sidebar" role="navigation">
+        <div class="sidebar-content">
+          <div class="sidebar-icon" data-toggle="sidebar">
+            <span class="fa fa-bars"></span>
+          </div>
+          <div class="sidebar-inner">
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="文件云管理">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">文件云管理</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="commonFileList.html" title="资料库管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-inbox"></span>
+                    </div>
+                    <span class="nav-title">资料库管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="netDiskConfig.html" title="用户云盘">
+                    <div class="nav-icon">
+                      <span class="fa fa-cloud"></span>
+                    </div>
+                    <span class="nav-title">用户云盘</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="convertVideoList.html" title="视频转码">
+                    <div class="nav-icon">
+                      <span class="fa fa-video-camera"></span>
+                    </div>
+                    <span class="nav-title">视频转码</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="messageList.html" title="消息管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-comment"></span>
+                    </div>
+                    <span class="nav-title">消息管理</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="云编辑管理">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">云编辑管理</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemCloudServers.html" title="服务器管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-server"></span>
+                    </div>
+                    <span class="nav-title">服务器管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemCloudGroups.html" title="分组管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-building"></span>
+                    </div>
+                    <span class="nav-title">分组管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemCloudFileTypes.html" title="文件类型管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-file"></span>
+                    </div>
+                    <span class="nav-title">文件类型管理</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="网络共享映射">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">网络共享映射</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="poolSharing.html" title="网络存储服务">
+                    <div class="nav-icon">
+                      <span class="fa fa-hdd-o"></span>
+                    </div>
+                    <span class="nav-title">网络存储服务</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="归档备份管理">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">归档备份管理</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="archiveFileList.html" title="归档库管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-archive"></span>
+                    </div>
+                    <span class="nav-title">归档库管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="fileJobList.html" title="在线归档任务">
+                    <div class="nav-icon">
+                      <span class="fa fa-tasks"></span>
+                    </div>
+                    <span class="nav-title">在线归档任务</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="archiveTactics.html" title="归档库备份">
+                    <div class="nav-icon">
+                      <span class="fa fa-clone"></span>
+                    </div>
+                    <span class="nav-title">归档库备份</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav sidebar-nav-active">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="存储设备管理">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">存储设备管理</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li class="active">
+                  <a data-toggle="tooltip" data-placement="right" href="equipList.html" title="存储设备管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-building-o"></span>
+                    </div>
+                    <span class="nav-title">存储设备管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="mediaPools.html" title="存储池管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-database"></span>
+                    </div>
+                    <span class="nav-title">存储池管理</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="防病毒管理">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">防病毒管理</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="virusConfig.html" title="防病毒配置">
+                    <div class="nav-icon">
+                      <span class="fa fa-cog"></span>
+                    </div>
+                    <span class="nav-title">防病毒配置</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="virusScanning.html" title="防病毒扫描">
+                    <div class="nav-icon">
+                      <span class="fa fa-search"></span>
+                    </div>
+                    <span class="nav-title">防病毒扫描</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="virusFileList.html" title="病毒文件">
+                    <div class="nav-icon">
+                      <span class="fa fa-bug"></span>
+                    </div>
+                    <span class="nav-title">病毒文件</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="系统设置">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">系统设置</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="usersList.html" title="用户管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-user"></span>
+                    </div>
+                    <span class="nav-title">用户管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="departmentList.html" title="部门管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-sitemap"></span>
+                    </div>
+                    <span class="nav-title">部门管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="groupsList.html" title="工作组管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-group"></span>
+                    </div>
+                    <span class="nav-title">工作组管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemMenuList.html" title="权限配置">
+                    <div class="nav-icon">
+                      <span class="fa fa-key"></span>
+                    </div>
+                    <span class="nav-title">权限配置</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="adConfig.html" title="AD域管理">
+                    <div class="nav-icon">
+                      <span class="fa fa-audio-description"></span>
+                    </div>
+                    <span class="nav-title">AD域管理</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="baseInfo.html" title="基本配置">
+                    <div class="nav-icon">
+                      <span class="fa fa-gear"></span>
+                    </div>
+                    <span class="nav-title">基本配置</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemConfig.html" title="高级配置">
+                    <div class="nav-icon">
+                      <span class="fa fa-gears"></span>
+                    </div>
+                    <span class="nav-title">高级配置</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="applicationList.html" title="第三方应用">
+                    <div class="nav-icon">
+                      <span class="fa fa-th-large"></span>
+                    </div>
+                    <span class="nav-title">第三方应用</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="systemLogList.html" title="系统日志">
+                    <div class="nav-icon">
+                      <span class="fa fa-file-text-o"></span>
+                    </div>
+                    <span class="nav-title">系统日志</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="help.html" title="注册支持">
+                    <div class="nav-icon">
+                      <span class="fa fa-support"></span>
+                    </div>
+                    <span class="nav-title">注册支持</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="bandwidthControl.html" title="网络限速">
+                    <div class="nav-icon">
+                      <span class="fa fa-hourglass"></span>
+                    </div>
+                    <span class="nav-title">网络限速</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+            <div class="sidebar-nav">
+              <div class="sidebar-title" data-trans="trans" data-toggle="tooltip" data-placement="right" title="统计报表">
+                <span class="fa fa-caret-right sidebar-title-icon"></span>
+                <span class="sidebar-title-text">统计报表</span>
+              </div>
+              <ul class="sidebar-trans">
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="uploadCountList.html" title="文件上传统计">
+                    <div class="nav-icon">
+                      <span class="fa fa-upload"></span>
+                    </div>
+                    <span class="nav-title">文件上传统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="loginCountList.html" title="用户访问统计">
+                    <div class="nav-icon">
+                      <span class="fa fa-cloud-upload"></span>
+                    </div>
+                    <span class="nav-title">用户访问统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="fileTypeCountList.html" title="文件类型统计">
+                    <div class="nav-icon">
+                      <span class="fa fa-area-chart"></span>
+                    </div>
+                    <span class="nav-title">文件类型统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="userFileList.html" title="用户云盘统计">
+                    <div class="nav-icon">
+                      <span class="fa fa-pie-chart"></span>
+                    </div>
+                    <span class="nav-title">用户云盘统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="commonFileAnalysis.html" title="资料库阅读统计">
+                    <div class="nav-icon">
+                      <span class="fa fa-line-chart"></span>
+                    </div>
+                    <span class="nav-title">资料库阅读统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="usersAliveList.html" title="用户在线状态">
+                    <div class="nav-icon">
+                      <span class="fa fa-bar-chart"></span>
+                    </div>
+                    <span class="nav-title">用户在线状态</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tooltip" data-placement="right" href="commonfileInfoExport.html" title="资料库文件信息导出">
+                    <div class="nav-icon">
+                      <span class="fa fa-arrow-circle-right"></span>
+                    </div>
+                    <span class="nav-title">资料库文件信息导出</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.sidebar-nav -->
+          </div><!-- /.sidebar-inner -->
+        </div><!-- /.sidebar-content -->
+      </div><!-- /.sidebar -->
+      <div class="view-frame-body view-frame-navbar-collapse" role="main">
+        <div class="view-frame-navbar">
+          <div class="navbar-title">
+            存储设备管理
+          </div><!-- /.breadcrumb-bar -->
+          <div class="navbar-list">
+            <ul class="nav" role="tree">
+              <li class="active">
+                <a href="equipList.html">已添加设备列表</a>
+              </li>
+              <li>
+                <a href="equipList2.html">当前服务器系统装载目录</a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.view-frame-navbar -->
+        <div class="navbar-collapse" data-toggle="navbar">
+          <div class="navbar-collapse-inner">
+            <div class="navbar-collapse-bg"></div>
+            <div class="navbar-collapse-btn">
+              <span class="icon-collapse fa fa-dedent"></span>
+            </div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+        <div class="view-frame-content">
+          <div class="breadcrumb-bar">
+            <h5 class="text">添加存储设备</h5>
+          </div>
+           <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                添加存储设备
+              </h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal required-validate" action="#" method="post" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">设备类型：</label>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option value="1">目录设备</option>
+                      <option value="2">新型线性磁带机</option>
+                      <option value="3">传统磁带库</option>
+                      <option value="4">新型线性磁带库</option>
+                      <option value="5">传统磁带机</option>
+                      <option value="6">虚拟磁带库</option>
+                      <option value="7">NAS设备</option>
+                      <option value="8">DDN设备</option>
+                      <option value="9">IBM CleverSafe设备</option>
+                      <option value="10">ECS设备</option>
+                      <option value="11">Hadoop设备</option>
+                      <option value="12">CEPH设备</option>
+                      <option value="13">阿里云设备</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">
+                    <span class="text-danger">*</span>设备名称：
+                  </label>
+                  <div class="col-sm-5">
+                    <input class="form-control" name="name" data-bv-notempty data-bv-trigger="blur" data-bv-notempty-message="设备名称不能为空" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">
+                    <span class="text-danger">*</span>
+                    装载目录：
+                  </label>
+                  <div class="col-sm-5">
+                    <input class="form-control" name="loadDir" data-bv-notempty data-bv-trigger="blur" data-bv-notempty-message="目录不能为空" type="text">
+                  </div>
+                  <div class="form-content">
+                    <a href="javascript:void(0);">检查目录是否存在</a>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">描述：</label>
+                  <div class="col-sm-5">
+                    <textarea class="form-control" rows="6"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-5">
+					          <button class="btn btn-primary" type="submit">提交</button>
+                    <a class="btn btn-default" href="equipList.html">返回列表</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div><!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                为设备添加卷
+              </h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-inline form-volume" action="#" method="post" role="form">
+                <span>卷标签：</span>
+                <input class="form-control mr10" type="text" value="L00001L5">
+                <span>卷容量：</span>
+                <input class="form-control mr10" type="text"> 
+                <span class="mr10">MB</span>
+				        <button class="btn btn-primary mr10" type="submit">添加</button>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" style="width: 100%" role="progressbar">
+                    <span class="sr-only">100%</span>
+                  </div>
+                </div>
+                <span>总大小：31.18GB 已分配：10240.00GB</span>
+              </form>
+            </div>
+          </div><!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                该设备有以下卷
+              </h3>
+            </div>
+            <div class="panel-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>卷名称</th>
+                    <th>所属存储池</th>
+                    <th>标签</th>
+                    <th>存储目录</th>
+                    <th>卷容量(<span class="text-info">点击可编辑</span>)</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>linkapp</td>
+                    <td>asd</td>
+                    <td>linkapp</td>
+                    <td>/usr/linkapp/data/linkapp</td>
+                    <td>
+                      <a data-toggle="modal" data-target="#volumeSpace">10,240GB</a>
+                    </td>
+                    <td>
+                      <span class="text-success">在线</span>
+                    </td>
+                    <td>2017-03-14 16:31</td>
+                    <td>
+                      <ul class="op-menu">
+                        <li><a href="javascript:void(0);">删除</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>linkapp</td>
+                    <td>asd</td>
+                    <td>linkapp</td>
+                    <td>/usr/linkapp/data/linkapp</td>
+                    <td>
+                      <a data-toggle="modal" data-target="#volumeSpace">10,240GB</a>
+                    </td>
+                    <td>
+                      <span class="text-danger">离线</span>
+                    </td>
+                    <td>2017-03-14 16:31</td>
+                    <td>
+                      <ul class="op-menu">
+                        <li><a href="javascript:void(0);">删除</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- /.panel -->
+        </div><!-- /.view-frame-content -->
+      </div><!-- /.view-frame-body -->
+    </div><!-- /.view-frame -->
+    <div class="modal fade" id="volumeSpace" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">&times;</button>
+            <h4 class="modal-title">修改卷空间大小</h4>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-warning">
+              注意：设置的空间建议小于实际存储空间! 如实际存储空间16TB,可设置为15TB，给系统保留部分空余空间，防止写满.
+            </div>
+            <form class="form-horizontal" action="#" method="post" role="form">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">请输入卷空间大小：</label>
+                <div class="col-sm-4">
+                  <input class="form-control" type="text" value="10240">
+                </div>
+                <div class="col-sm-3">
+                  <select class="form-control">
+                    <option value="1">B</option>
+                    <option value="2">KB</option>
+                    <option value="3">MB</option>
+                    <option value="4" selected="selected">GB</option>
+                    <option value="5">TB</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button">确定</button>
+            <button class="btn btn-default" data-dismiss="modal" type="button">取消</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+    <script src="js/jquery.min.js?rev=@@hash"></script>
+    <script src="js/bootstrap.min.js?rev=@@hash"></script>
+  </body>
+</html>
