@@ -1,0 +1,95 @@
+//
+// 左侧子菜单折叠
+// --------------------------------------------------
+
+.navbar-collapse {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: @navbar-collapse-default-width;
+    height: @navbar-collapse-default-height;
+    transition: all 0.2s ease 0s;
+    z-index: 3;
+    
+    .navbar-collapse-inner {
+        position: relative;
+        top: -50%;
+        overflow:hidden;
+    }
+
+    .navbar-collapse-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: @navbar-collapse-default-height;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-left: 13px solid #d9dee4;
+        transition: all 0.1s ease 0s, all 0.1s ease 0s;
+    }
+    
+    &:hover .navbar-collapse-bg {
+        border-top-width: 8px;
+        border-bottom-width: 8px;
+        border-left-width: 20px;
+    }
+
+    .navbar-collapse-btn {
+        position: relative;
+        left: -7px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.1s ease, 0.1s ease;
+
+        > span {
+            line-height: 50px;
+            font-size: 15px;
+            color: #546478;
+            vertical-align: text-top;
+        }
+
+        .icon-collapse {
+            transform: rotate(180deg);
+        }
+    }
+
+    &:hover .navbar-collapse-btn {
+        left: 0;
+    }
+
+}
+
+.view-frame-navbar-collapse .navbar-collapse {
+    left: 160px;
+
+    .navbar-collapse-bg {
+        right: 0;
+        left: auto;
+        border-top: 9px solid transparent;
+        border-right: 13px solid #f7f7f7;
+        border-bottom: 9px solid transparent;
+        border-left: none;
+    }
+
+    &:hover .navbar-collapse-bg {
+        border-top-width: 8px;
+        border-right-width: 20px;
+        border-bottom-width: 8px;
+    }
+    
+    .navbar-collapse-btn {
+        right: -7px;
+        left: auto;
+
+        .icon-collapse {
+            transform: rotate(0);
+        }
+    }
+
+    &:hover .navbar-collapse-btn {
+        right: 0;
+        left: auto;
+    }
+}

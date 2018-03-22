@@ -1,0 +1,93 @@
+//
+// 表单
+// --------------------------------------------------
+
+
+.form-content {
+    display: inline-block;
+    padding-top: (@padding-base-vertical + 1);
+    word-break: break-all;
+}
+
+.form-horizontal {
+	.form-select {
+		min-height: 100px;
+	}
+	.btn + .btn {
+		margin-left: 8px;
+	}
+    .btn-group-op {
+        display: inline-block;
+        .btn {
+            display: block;
+            & + .btn {
+                margin-top: 8px;
+                margin-left: 0;
+            }
+        }
+    }
+	.icon-plus,
+    .icon-minus {
+		display: inline-block;
+		padding-top: 5px;
+		font-size: 16px;
+	}
+    .icon-minus {
+        margin-left: 10px;
+    }
+	.texttip {
+        .form-content();
+		margin-top: 0;
+    	margin-bottom: 0;
+    	margin-left: 10px;
+    	vertical-align: middle;
+    	color: @text-muted;
+    }
+    .modify-logo {
+    	display: inline-block;
+    	width: 200px;
+    	height: 62px;
+    	background: #388dee;
+    }
+    textarea.form-control {
+        resize: none;
+    }
+    .text-tip {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+    .radio,
+    .checkbox {
+        padding-left: 20px;
+    }
+    .form-flow {
+        min-height: 100px;
+        margin-left: (@grid-gutter-width / 2);
+        margin-right: (@grid-gutter-width / 2);
+        border: 1px dashed @border-default-color;
+    }
+    .text-left {
+        text-align: left;
+    }
+    .form-group-ip > div + div:before {
+        content: ".";
+        position: absolute;
+        top: 5px;
+        left: -2px;
+        color: #666;
+    }
+}
+
+.form-volume {
+    .form-control {
+        width: 140px;
+    }
+
+    .progress {
+        display: inline-block;
+        width: 160px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+}

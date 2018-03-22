@@ -1,0 +1,53 @@
+//
+// 表格
+// --------------------------------------------------
+
+.table {
+    border: 1px solid @table-border-color;
+
+    thead > tr > th {
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+	    font-weight: 400;
+	    color: #999;
+	    border-bottom-width: 1px;
+	    background-color: @table-thead-bg-color;
+    }
+
+    tbody > tr {
+        &.tr-striped {
+            background-color: @table-bg-accent;
+        }
+        > td {
+        	padding-top: 12px;
+        	padding-bottom: 12px;
+        	vertical-align: middle;
+            .op-menu {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                > li {
+                  float: left;
+                  & + li:before {
+                    content: "|";
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    color: #999;
+                  }
+                } 
+            }
+        }
+    }
+    input[type=checkbox],
+    input[type=radio] {
+        display: block;
+        margin-top: 0;
+    }
+    .text-mr {
+    	margin-right: 20px;
+    }
+    .progress {
+        margin-bottom: 10px;
+    }
+
+}

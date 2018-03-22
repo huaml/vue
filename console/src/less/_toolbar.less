@@ -1,0 +1,37 @@
+//
+// 工具栏
+// --------------------------------------------------
+
+.toolbar {
+    padding-bottom: 6px;
+    overflow: hidden;
+    .btn,
+    .form-control {
+        margin-right: 6px;
+        margin-bottom: 10px;
+    }
+
+    .view-mode {
+        padding-top: 6px;
+        .fa {
+            font-size: 20px;
+            color: #abb3ba;
+            &:last-child {
+                margin-left: 6px;
+            }
+            &.active {
+                color: #75777a;
+            }
+
+        }
+    }
+    .checkbox-group  {
+        display: inline-block;
+        vertical-align: text-bottom;
+        .checkbox-inline {
+            &:last-child {
+                padding-right: 10px;
+            }
+        }
+    }
+}

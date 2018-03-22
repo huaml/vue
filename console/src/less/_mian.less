@@ -1,0 +1,58 @@
+//
+// 整体框架
+// --------------------------------------------------
+
+
+.view-frame {
+    position: absolute;
+    top: @view-default-fixed-top;
+    bottom: 0;
+    width: 100%;
+}
+
+.view-frame-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: @view-default-absolute-left;
+    width: auto;
+    overflow: hidden;
+    transition: all 0.2s ease 0s;
+}
+
+.view-frame.view-frame-mini .view-frame-body {
+    left: @view-collapse-absolute-left;
+}
+
+.view-frame-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    padding-left: @view-padding-horizontal;
+    padding-right: @view-padding-horizontal;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.2s ease 0s;
+    word-break: break-all;
+}
+
+.view-frame-navbar-collapse .view-frame-content {
+    left: @view-default-absolute-left;
+}
+
+.mt10 {
+    margin-top: @view-margin-vertical;
+}
+.mr10 {
+    margin-right: @view-margin-horizontal;
+}
+.mb {
+    margin-bottom: 0;
+}
+.pt7 {
+    padding-top: (@padding-base-vertical + 1);
+}

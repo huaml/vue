@@ -1,0 +1,36 @@
+//
+// nav-tabs
+// --------------------------------------------------
+
+.nav-tabs {
+    margin-bottom: @navtabs-default-margin-bottom;
+    border-bottom: 1px solid @border-default-color;
+    > li {
+        border-left: 1px solid @border-default-color;
+        border-right: 1px solid @border-default-color;
+        border-top: 1px solid @border-default-color;
+        margin-left: -1px;
+        > a,
+        > a:focus {
+            margin-right: 0;
+            padding: @navtabs-padding-vertical @navtabs-padding-horizontal;
+            border-radius: 0;
+            border: none;
+            font-weight: 700;
+            color: @navtabs-default-link-color;
+            background: @navtabs-default-link-bg;
+        }
+        &.active {
+            border-top: none;
+            > a,
+            > a:hover,
+            > a:focus {
+                padding-top: @navtabs-active-padding-vertical;
+                border-width: 2px 0 1px;
+                border-style: solid none;
+                border-color: @navtabs-default-border-top transparent @navtabs-default-border-bottom;
+                color: @navtabs-default-active-link-color;
+            }
+        }
+    }
+}
