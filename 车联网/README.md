@@ -5,10 +5,10 @@
 
 ## 技术
 ```javascript
-   HTML, CSS, jQuery, Bootstrap
+HTML, CSS, jQuery, Bootstrap
 ```
 
 ## 兼容性
 ```javascript
-   不支持低版本ie
+不支持低版本ie
 ```
