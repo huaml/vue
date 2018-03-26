@@ -3,7 +3,7 @@
 > Vue.js 简单小项目-Book App
 
 ## 安装与运行
-### 安装依赖
+### 克隆项目
 ```
 git clone https://github.com/huaml/vue.git
 ```
