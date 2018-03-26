@@ -23,3 +23,7 @@ npm run dev
 ```
 npm run build
 ```
+## 技术
+```
+html, sass, vue.js, webpack
+```
