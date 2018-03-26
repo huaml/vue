@@ -26,9 +26,9 @@ https://huaml.github.io/Bootstrap/console/dist/index.html
 ## 技术
 ```javascript
 HTML, Less, jQuery, Bootstrap, Gulp
-``
+```
 
 ## 兼容性
 ```javascript
 不支持低版本ie
-``
+```
