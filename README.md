@@ -29,6 +29,8 @@ npm run build
 html, sass, vue.js, webpack
 ```
 ## 项目截图
+![image](https://github.com/huaml/vue/blob/master/static/7.gif)
+
 ![image](https://github.com/huaml/vue/blob/master/static/1.png)
 
 ![image](https://github.com/huaml/vue/blob/master/static/2.png)
