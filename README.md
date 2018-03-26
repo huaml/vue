@@ -2,19 +2,6 @@
 
 > Vue.js 简单小项目-Book App
 
-## 项目截图
-![image](https://github.com/huaml/vue/blob/master/static/1.png)
-
-![image](https://github.com/huaml/vue/blob/master/static/2.png)
-
-![image](https://github.com/huaml/vue/blob/master/static/3.png)
-
-![image](https://github.com/huaml/vue/blob/master/static/4.png)
-
-![image](https://github.com/huaml/vue/blob/master/static/5.png)
-
-![image](https://github.com/huaml/vue/blob/master/static/6.png)
-
 ## 安装与运行
 ### 克隆项目
 ```
@@ -41,3 +28,15 @@ npm run build
 ```
 html, sass, vue.js, webpack
 ```
+## 项目截图
+![image](https://github.com/huaml/vue/blob/master/static/1.png)
+
+![image](https://github.com/huaml/vue/blob/master/static/2.png)
+
+![image](https://github.com/huaml/vue/blob/master/static/3.png)
+
+![image](https://github.com/huaml/vue/blob/master/static/4.png)
+
+![image](https://github.com/huaml/vue/blob/master/static/5.png)
+
+![image](https://github.com/huaml/vue/blob/master/static/6.png)
