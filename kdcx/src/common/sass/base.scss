@@ -1,0 +1,19 @@
+html, body {
+  line-height: 1;
+  font-family: "PingFang SC", "STHeitiSC-Light", "Helvetica-Light", arial, sans-serif, "Droid Sans Fallback";
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+input:focus {
+  outline: 0;
+}
+body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
