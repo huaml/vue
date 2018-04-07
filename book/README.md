@@ -1,6 +1,6 @@
 # Book
 
-> Vue.js 简单小项目-Book App
+> Vue.js 简单小案例-Book App
 
 ## 安装与运行
 ### 克隆项目
@@ -9,7 +9,7 @@ git clone https://github.com/huaml/vue.git
 ```
 ### 进入项目文件
 ```
-cd vue
+cd vue/book
 ```
 ### 安装依赖
 ```
@@ -29,16 +29,16 @@ npm run build
 html, sass, vue.js, webpack
 ```
 ## 项目截图
-![image](https://github.com/huaml/vue/blob/master/static/7.gif)
+![image](https://github.com/huaml/vue/blob/master/book/static/7.gif)
 
-![image](https://github.com/huaml/vue/blob/master/static/1.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/1.png)
 
-![image](https://github.com/huaml/vue/blob/master/static/2.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/2.png)
 
-![image](https://github.com/huaml/vue/blob/master/static/3.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/3.png)
 
-![image](https://github.com/huaml/vue/blob/master/static/4.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/4.png)
 
-![image](https://github.com/huaml/vue/blob/master/static/5.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/5.png)
 
-![image](https://github.com/huaml/vue/blob/master/static/6.png)
+![image](https://github.com/huaml/vue/blob/master/book/static/6.png)
