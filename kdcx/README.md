@@ -23,7 +23,10 @@ npm run dev
 ```
 npm run build
 ```
-
+## 数据来源
+```
+快递 100
+```
 ## 技术
 ```
 html, sass, vue.js, webpack
