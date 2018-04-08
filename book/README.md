@@ -23,7 +23,10 @@ npm run dev
 ```
 npm run build
 ```
-
+## 数据来源
+```
+data.json模拟数据
+```
 ## 技术
 ```
 html, sass, vue.js, webpack
